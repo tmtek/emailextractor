@@ -1,6 +1,6 @@
 {
   "name": "emailextractor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Extract email addresses from a webpage into a comma delimited list.",
   "main": "background.js",
   "scripts": {
