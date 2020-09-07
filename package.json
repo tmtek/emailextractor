@@ -1,0 +1,30 @@
+{
+  "name": "emailextractor",
+  "version": "0.0.3",
+  "description": "Extract email addresses from a webpage into a comma delimited list.",
+  "main": "background.js",
+  "scripts": {
+    "start": "http-server demo -p 3001",
+    "build": "rm -R build; npm run build:staticfiles; npm run build:contentscript",
+    "build:contentscript": "rollup src/contentscript.js --file build/contentscript.js --format iife",
+    "build:staticfiles": "cpx \"src/static/*\" build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmtek/emailextractor.git"
+  },
+  "author": "@tmtek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmtek/emailextractor/issues"
+  },
+  "homepage": "https://github.com/tmtek/emailextractor#readme",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "http-server": "^0.12.3",
+    "jest": "25.2.2",
+    "rollup": "^2.26.10",
+    "rollup-jest": "0.0.2"
+  }
+}
