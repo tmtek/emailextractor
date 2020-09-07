@@ -1,0 +1,14 @@
+{
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"name": "Email Extractor",
+	"description": "Extract email addresses from a webpage into a comma delimited list.",
+	"permissions": ["activeTab", "<all_urls>"],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"browser_action": {
+		"default_title": "Extract Email Addresses"
+	}
+}
